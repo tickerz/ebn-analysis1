@@ -4,10 +4,8 @@ import pandas as pd
 import numpy as np
 import psycopg2 as pg
 
-
-
 def process_chunk(chunk):
-    answer=chunk.groupby('consignor_state').consginor_state.count()
+    answer=chunk.groupby('consignor_state').consignor_state.count()
     return answer
 
 size=5000000
